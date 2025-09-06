@@ -2568,7 +2568,7 @@ section#why-choose-1657.brand-statement .bs-cta-btn:hover{
 
 section#why-choose-1657.brand-statement .cs-wrapper:before{ display:none !important; }
 section#why-choose-1657.brand-statement .cs-picture{ display:none !important; }
-/* ===== Brand Statement 居中修正 ===== */
+/* ===== Brand Statement ===== */
 #why-choose-1657.brand-statement {
   display: flex !important;
   justify-content: center !important;
@@ -2576,16 +2576,15 @@ section#why-choose-1657.brand-statement .cs-picture{ display:none !important; }
   padding: clamp(4rem, 8vw, 6rem) 1rem !important;
 }
 
-/* 覆盖掉左侧窄卡片样式 */
 #why-choose-1657.brand-statement .cs-container {
-  max-width: 72rem !important;  /* 可以控制整体宽度 */
+  max-width: 72rem !important;  
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   text-align: center !important;
-  background: none !important;  /* 去掉白卡片背景 */
-  box-shadow: none !important;  /* 去掉阴影 */
+  background: none !important; 
+  box-shadow: none !important; 
   padding: 0 !important;
 }
 
@@ -2651,4 +2650,28 @@ section#why-choose-1657.brand-statement .cs-picture{ display:none !important; }
   background:var(--headerColor);
   transform:translateY(-1px);
   box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* === Fix: center hero content === */
+#hero-229 .cs-container{
+  max-width: 1200px;
+  margin: 0 auto;           
+  display: grid;           
+  justify-items: center;    
+}
+
+#hero-229 .cs-content{
+  margin: 0 auto;          
+  text-align: center;      
+  width: min(64rem, 92%);  
+}
+
+#hero-229 .cs-title,
+#hero-229 .cs-text{
+  margin-left: auto;       
+  margin-right: auto;
+}
+
+#hero-229 .cs-button-group{
+  justify-content: center;  
 }
