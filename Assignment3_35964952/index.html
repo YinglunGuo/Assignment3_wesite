@@ -9,14 +9,19 @@
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
 
-<link rel="preload" as="image" href="assets/img/hero-1920.jpg" imagesrcset="
-    assets/img/hero-768.jpg 768w,
-    assets/img/hero-1280.jpg 1280w,
-    assets/img/hero-1920.jpg 1920w" imagesizes="100vw">
 
+  <link rel="preload" as="image"
+        href="assets/img/hero-1920.jpg"
+        imagesrcset="
+          assets/img/hero-768.jpg 768w,
+          assets/img/hero-1280.jpg 1280w,
+          assets/img/hero-1920.jpg 1920w"
+        imagesizes="100vw">
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
+<body>
+
 
 <!-- ============================================ -->
 <!--             Navigation(Dropdown) Id: 1530    -->
@@ -79,39 +84,38 @@
 <!--                   Hero                       -->
 <!-- ============================================ -->
 
-<section id="hero-229">
+<section id="hero-229" aria-labelledby="hero-title">
   <div class="cs-container">
-    <div class="cs-flex-group">
-      <span class="cs-topper">MERA • Trusted Supplement Store</span>
-      <h1 id="hero-title" class="cs-title">Your Daily Source of Supplements</h1>
+    <div class="cs-content">
+      <span class="cs-topper">Trusted Supplement Store</span>
+      <h1 id="hero-title" class="cs-title">Fuel Your Health & Performance</h1>
       <p class="cs-text">
-        Discover MERA supplements for everyday wellness — premium protein,
-        essential vitamins, and performance nutrition from trusted global brands.
+        Quality vitamins, proteins, and performance supplements — handpicked for real results.
       </p>
+
       <div class="cs-button-group">
         <a href="#product-showcase" class="cs-button-solid cs-button">Shop Supplements</a>
-         <a href="#why-choose-1657" class="cs-button-transparent cs-button">
+        <a href="#why-choose-1657" class="cs-button-transparent cs-button">
           <img class="cs-img" loading="lazy" decoding="async"
-               src="assets/img/icon-play.svg" alt="" width="17" height="17" aria-hidden="true">
+               src="assets/img/logo.png" alt="MERA logo" width="22" height="22">
           About MERA
         </a>
       </div>
     </div>
   </div>
-
   <picture class="cs-picture">
     <source media="(min-width: 1024px)" srcset="assets/img/hero-1920.jpg">
-    <source media="(min-width: 768px)"  srcset="assets/img/hero-1280.jpg">
-    <img loading="lazy" decoding="async" 
-         src="assets/img/hero-768.jpg" 
-         alt="MERA supplements background" 
+    <source media="(min-width: 768px)"  srcset="assets/img/hero-1920.jpg">
+    <img loading="eager" decoding="async"
+         src="assets/img/hero-1920.jpg"
+         alt="Supplements background"
          width="1920" height="1080">
   </picture>
 </section>
 
+<main id="main">
 
 
-  <main id="main">
 <!-- ========== SECTION 2: PRODUCT SHOWCASE  ========== -->
 <section id="product-showcase" aria-labelledby="product-showcase-title">
   <div class="cs-container">
@@ -186,7 +190,7 @@
   </div>
 </div>
 
-<!-- 产品卡片 Vitamin K2 + D3 -->
+<!-- Vitamin K2 + D3 -->
 <div class="cs-item" data-category="vitamins">
   <div class="cs-item-picture-wrapper">
     <img class="cs-item-picture" 
@@ -202,7 +206,7 @@
   </div>
 </div>
 
-<!-- 产品卡片 Pump Non-Stim Pre-Workout -->
+<!-- Pump Non-Stim Pre-Workout -->
 <div class="cs-item" data-category="performance">
   <div class="cs-item-picture-wrapper">
     <img class="cs-item-picture" 
@@ -218,7 +222,7 @@
   </div>
 </div>
 
-<!-- ✅ 产品卡片 Gold Standard Whey（完整） -->
+<!--  Gold Standard Whey -->
 <div class="cs-item" data-category="protein">
   <div class="cs-item-picture-wrapper">
     <img class="cs-item-picture"
@@ -234,7 +238,7 @@
   </div>
 </div>
 
-<!-- 产品卡片 Lean Whey -->
+<!--  Lean Whey -->
 <div class="cs-item" data-category="protein">
   <div class="cs-item-picture-wrapper">
     <img class="cs-item-picture"
@@ -317,8 +321,7 @@
 </article>
 
 
-
-<!-- ========== SECTION 3: WHY CHOOSE US（ID:1657，计入区块） ========== -->
+<!-- ========== SECTION 3: WHY CHOOSE USID:1657 ========== -->
 
 <!-- ============================================ -->
 <!--                Why Choose Us                 -->
@@ -334,17 +337,9 @@
     <a class="bs-cta-btn" href="#shop">YOUR #1 SUPPLEMENT STORE IN AUSTRALIA</a>
   </div>
 </section>
-
-
-    <!-- ========== SECTION 4: （可选：如果 2051 实际是 Testimonials，就把标题当 Testimonials） ========== -->
-    <!-- 如果 2051 是评价组件，这块就自动成为 Testimonials/Reviews 区块，也符合作业“4–5 个区块”的要求。 -->
-    <!-- 无需额外新模块。 -->
   </main>
-
-  <!-- ========== SECTION 5: FOOTER（Footer with 4 Columns, ID:1292，计入区块） ========== -->
-  <!-- 去 1292 页面点 Get Code → HTML，复制 footer 结构到这里。 -->
     <!-- BEGIN PASTE: CodeStitch Footer with 4 Columns (1292) -->
-  <!-- ========== SECTION 5: FOOTER（Footer with 4 Columns, ID:1292，计入区块） ========== -->
+  <!-- ========== SECTION 5: FOOTER（Footer with 4 Columns, ID:1292） ========== -->
   <footer id="cs-footer-1292" role="contentinfo" aria-labelledby="footer-title">
     <div class="cs-container">
       <h2 id="footer-title" class="visually-hidden">Site footer</h2>
@@ -411,13 +406,11 @@
   <!--             Back to Top Button             -->
   <!-- ============================================ -->
   <a href="#" id="back-to-top-btn" aria-label="back to top button">
-    <!-- 使用 SVG 箭头图标 -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
       <path d="M11.9999 10.8284L7.05024 15.7782L5.63603 14.364L11.9999 8L18.3638 14.364L16.9496 15.7782L11.9999 10.8284Z"></path>
     </svg>
   </a>
 
-  <!-- 外链脚本 -->
   <script src="js/main.js" defer></script>
 
   <!-- Product Quick View Modal -->
