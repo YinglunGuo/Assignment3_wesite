@@ -2655,24 +2655,23 @@ section#why-choose-1657.brand-statement .cs-picture{ display:none !important; }
 /* === Fix: center hero content === */
 #hero-229 .cs-container{
   max-width: 1200px;
-  margin: 0 auto;           /* 居中容器 */
-  display: grid;            /* 用 grid 方便水平居中 */
-  justify-items: center;    /* 水平居中所有子元素 */
-  /* 如果你的原样式依赖内边距作为高度，请保留原来的 padding-block */
+  margin: 0 auto;           
+  display: grid;           
+  justify-items: center;    
 }
 
 #hero-229 .cs-content{
-  margin: 0 auto;           /* 防止被其它 margin 影响 */
-  text-align: center;       /* 文本居中 */
-  width: min(64rem, 92%);   /* 给内容一个合理宽度，避免太宽 */
+  margin: 0 auto;          
+  text-align: center;      
+  width: min(64rem, 92%);  
 }
 
 #hero-229 .cs-title,
 #hero-229 .cs-text{
-  margin-left: auto;        /* 彻底消除左偏 */
+  margin-left: auto;       
   margin-right: auto;
 }
 
 #hero-229 .cs-button-group{
-  justify-content: center;  /* 按钮组居中 */
+  justify-content: center;  
 }
