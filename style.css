@@ -978,11 +978,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* 这个 fixed 属性可以创建很酷的视差滚动效果，建议保留 */
     background-attachment: fixed; 
   }
   #hero-229 .cs-picture img {
-    /* 这个需要保留，因为它隐藏了小屏幕用的img标签 */
     display: none;
   }
 }
